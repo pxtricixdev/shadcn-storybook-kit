@@ -1,0 +1,57 @@
+.badge {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 4px;
+	border-radius: 8px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+/* VARIANTS */
+
+.badge--primary {
+	background-color: #171717;
+	color: #fafafa;
+}
+
+.badge--secondary {
+	background-color: #f5f5f5;
+	color: #171717;
+}
+
+.badge--outline {
+	background-color: #fff;
+	color: #0a0a0a;
+	border: 1px solid #e5e5e5;
+}
+
+.badge--ghost {
+	background-color: transparent;
+	color: #0a0a0a;
+}
+
+.badge--destructive {
+	background-color: #dc2626;
+	color: white;
+}
+
+/* FOCUS */
+
+.badge:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px #d4d4d4;
+}
+
+.badge--primary:focus,
+.badge--secondary:focus,
+.badge--outline:focus,
+.badge--ghost:focus {
+	box-shadow: 0 0 0 3px #d4d4d4;
+}
+
+.badge--destructive:focus {
+	box-shadow: 0 0 0 3px #fca5a5;
+}
